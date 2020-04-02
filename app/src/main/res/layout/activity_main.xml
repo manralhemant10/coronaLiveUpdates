@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+
+        android:typeface="serif"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/main_autoview"
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:popupTheme="@drawable/input_design"
+        android:dropDownSelector="@drawable/input_design"
+        android:textSize="20sp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentTop="true"
+        android:dropDownHeight="250dp"
+        android:dropDownWidth="450dp"
+        android:completionThreshold="1"
+        android:hint="Select Country"
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
+ android:layout_below="@+id/main_autoview"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/starter"
+        android:id="@+id/animate"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_arr"
+        android:padding="5dp"
+        android:src="@drawable/arrowdown"
+        android:layout_alignBottom="@+id/main_autoview"
+        android:layout_alignTop="@+id/main_autoview"
+        android:layout_alignRight="@+id/main_autoview"
+        ></ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    tools:context=".Fragment_CountryWise">
+
+    <LinearLayout
+        android:id="@+id/heading_countrywise"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:text="Countries"
+            android:textStyle="bold"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white"
+        ></TextView>
+        <TextView
+            android:id="@+id/corona_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="40dp"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="Cases"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            ></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/heading_countrywise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CovidCountry_RecyclerView"
+        tools:listitem="@layout/list_covid_country"
+
+></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

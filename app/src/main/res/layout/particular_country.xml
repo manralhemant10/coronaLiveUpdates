@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    tools:context=".Fragment_ParticularCountry">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/country_particular_name"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ParticularCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            />
+         <TextView
+            android:id="@+id/change_particular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+             android:layout_gravity="center"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_particular_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_particular_name"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cases"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:typeface="serif"
+                android:textColor="#242323"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ParticularTotalCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                android:typeface="serif"
+                tools:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:typeface="serif"
+                android:layout_height="wrap_content"
+                android:text="Today Cases"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="#242323"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ParticularTodayCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:layout_marginTop="-10dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:text="" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_particular_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/linear_layout_particular_cases"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Deaths"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:typeface="serif"
+                android:textColor="#242323"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/ParticularTotalDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:layout_marginTop="-10dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Deaths"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:typeface="serif"
+                android:textColor="#242323"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:typeface="serif"
+                android:id="@+id/ParticularTodayDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:text=""  />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Total_recovered_particular_countrydetail"
+        android:layout_below="@id/linear_layout_particular_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Recovered"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="#242323"
+        android:textSize="20sp"
+            />
+        <TextView
+            android:typeface="serif"
+            android:id="@+id/ParticularTotalRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            tools:text="" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recover_layout"
+        android:layout_below="@+id/Total_recovered_particular_countrydetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Active"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#242323"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/ParticularTotalActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:typeface="serif"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:text=""  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Critical"
+                android:textColor="#242323"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/ParticularTotalCritical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:typeface="serif"
+                android:layout_marginTop="-10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:text="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recover_layout"
+        android:layout_margin="16dp">
+        <TextView
+            android:typeface="serif"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/ParticularChange"
+            android:padding="10dp"
+            android:background="@drawable/input_design"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            tools:text="Change Country" />
+
+    </RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

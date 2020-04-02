@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@drawable/gradient">
+
+    <group android:checkableBehavior="single">
+
+
+        <item android:id="@+id/nav_particularCountry"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+
+        <item android:id="@+id/nav_home"
+              android:icon="@drawable/stats"
+              android:title="Overall Stats"/>
+
+         <item android:id="@+id/nav_countryWise"
+               android:icon="@drawable/globe"
+               android:title="All Countries Stats"/>
+
+
+    </group>
+
+</menu>
