@@ -80,7 +80,7 @@ public class Fragment_ParticularCountry extends Fragment {
         requestQueue = Volley.newRequestQueue(getActivity());
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
-                "https://corona.lmao.ninja/countries", null, new Response.Listener<JSONArray>() {
+                "https://corona.lmao.ninja/v2/countries", null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
 
