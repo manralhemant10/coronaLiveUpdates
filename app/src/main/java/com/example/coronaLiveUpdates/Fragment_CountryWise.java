@@ -54,7 +54,7 @@ public class Fragment_CountryWise extends Fragment {
     }
 
     private void getDataFromServer() {
-        String url = "https://corona.lmao.ninja/countries";
+        String url = "https://corona.lmao.ninja/v2/countries";
 
         covidCountries = new ArrayList<CountryWise>();
 
