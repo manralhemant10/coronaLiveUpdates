@@ -125,7 +125,7 @@ public class Fragment_ParticularCountry extends Fragment {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Log.d("Shubham", "Something went wrong");
+                Log.d("error", "Something went wrong");
                 //Toast.makeText(Fragment_ParticularCountry.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
 
             }
